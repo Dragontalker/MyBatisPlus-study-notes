@@ -3,4 +3,12 @@
   <groupId>com.dragontalker.mp</groupId>
   <artifactId>mp01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>com.mchange</groupId>
+  		<artifactId>c3p0</artifactId>
+  		<version>0.9.5.2</version>
+  	</dependency>
+  </dependencies>
 </project>
