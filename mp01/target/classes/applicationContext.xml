@@ -35,5 +35,10 @@
 		<!-- 别名处理 -->
 		<property name="typeAliasesPackage" value="com.dragontalker.mp.beans"></property>
 	</bean>
+	
+	<!-- 配置MyBatis扫描mapper接口的路径 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.dragontalker.mp.mapper"></property>
+	</bean>
 
 </beans>
