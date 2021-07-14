@@ -8,7 +8,6 @@
   	<!-- my依赖
   		 myBatisPlus 会自动的维护MyBatis和mybatis-spring的依赖
   	 -->
-  
   	<dependency>
   		<groupId>com.baomidou</groupId>
   		<artifactId>mybatis-plus</artifactId>
