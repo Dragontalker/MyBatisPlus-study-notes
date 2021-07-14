@@ -2,7 +2,11 @@ package com.dragontalker.beans;
 
 /**
  * JavaBean
- *
+ * 
+ * 定义JavaBean时, 成员变量所使用的类型:
+ *   因为每个基本类型都有一个默认值:
+ *     int ==> 0
+ *     boolean ==> false
  */
 public class Employee {
 
