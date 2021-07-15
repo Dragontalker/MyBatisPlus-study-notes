@@ -18,5 +18,7 @@ public class TestMP {
 		
 		//4. 包名策略配置
 		
+		//5. 整合配置
+		
 	}
 }
