@@ -84,13 +84,15 @@ public class TestMP {
 		
 		//查询性别为女的, 根据age进行排序(asex/desc), 简单分页
 		
-		List<Employee> emps = employeeMapper.selectList(
-					new EntityWrapper<Employee>()
-						.eq("gender", 0)
-						.orderBy("age")
+		//List<Employee> emps = employeeMapper.selectList(
+					//new EntityWrapper<Employee>()
+						//.eq("gender", 0)
+						//.orderBy("age")
 						//.orderDesc(Arrays.asList(new String[] {"age"}) )
-						.last("desc")
-				);
+						//.last("desc limit 1, 3")
+				//);
+		
+		
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
