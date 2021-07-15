@@ -29,6 +29,8 @@ public class TestMP {
 		employee.setGender(1);
 		employee.setAge(35);
 		
+		boolean result = employee.insert();
+		System.out.println(">> result: " + result);
 	}
 	
 
