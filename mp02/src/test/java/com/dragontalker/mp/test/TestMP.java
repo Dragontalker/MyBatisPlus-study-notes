@@ -1,6 +1,7 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -9,6 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.dragontalker.beans.Employee;
 
 public class TestMP {
@@ -22,6 +24,13 @@ public class TestMP {
 	@Test
 	public void testARPage() {
 		
+		Employee employee = new Employee();
+		
+		Page<Employee> page = employee.selectPage(
+					new Page<Employee>(1, 1),
+					new EntityWrapper<Employee>()
+						.like("last_name", "Sen")
+				);
 	}
 	
 	/**
