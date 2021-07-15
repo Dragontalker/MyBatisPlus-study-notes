@@ -8,9 +8,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.dragontalker.beans.Employee;
-import com.dragontalker.mapper.EmployeeMapper;
 
 public class TestMP {
 	
