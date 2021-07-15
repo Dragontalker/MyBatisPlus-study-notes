@@ -29,6 +29,9 @@ public class TestMP {
 		employee.setEmail("sls@atguigu.com");
 		employee.setGender(1);
 		employee.setAge(36);
+		
+		boolean result = employee.updateById();
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
