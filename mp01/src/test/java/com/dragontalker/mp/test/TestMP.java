@@ -2,6 +2,7 @@ package com.dragontalker.mp.test;
 
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -86,7 +87,8 @@ public class TestMP {
 		List<Employee> emps = employeeMapper.selectList(
 					new EntityWrapper<Employee>()
 						.eq("gender", 0)
-						.orderBy("age")
+						//.orderBy("age")
+						.orderDesc(Arrays.asList(new String[] {"age"}) )
 				);
 		
 		for (Employee emp : emps) {
