@@ -25,8 +25,17 @@ public class TestMP {
 	@Test
 	public void testCommonSelect() {
 		
-		Employee employee = employeeMapper.selectById(7);
-		System.out.println(employee);
+		// 1. 通过id查询
+		//Employee employee = employeeMapper.selectById(7);
+		//System.out.println(employee);
+		
+		// 2. 通过多个列进行查询 id + lastName
+		Employee employee = new Employee();
+		employee.setId(7);
+		employee.setLastName("XiaoZeSensei");
+		
+		Employee result = employeeMapper.selectOne(employee);
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
