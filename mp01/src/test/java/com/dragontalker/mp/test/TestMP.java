@@ -44,7 +44,7 @@ public class TestMP {
 					new EntityWrapper<Employee>()
 						.eq("gender", 0)
 						.like("last_name", "Sensei")
-						.or()
+						.orNew()
 						.like("email", "a")
 				);
 		
