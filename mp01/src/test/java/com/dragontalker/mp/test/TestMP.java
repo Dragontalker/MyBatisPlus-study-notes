@@ -32,7 +32,9 @@ public class TestMP {
 		employee.setGender(1);
 		employee.setAge(22);
 		
-		employeeMapper.insert(employee);
+		// 插入到数据库
+		Integer result = employeeMapper.insert(employee);
+		System.out.println(">> reuslt " + result);
 	}
 
 	@Test
