@@ -38,7 +38,15 @@ public class TestMP {
 					//.eq("last_name", "Tom")
 			//);
 		
+		// 查询tbl_employee表中, 性别为女并且名字中带有"Sensei" 或者 邮箱中带有"a"
 		
+		List<Employee> emps = employeeMapper.selectList(
+					new EntityWrapper<Employee>()
+						.eq("gender", 0)
+						.like("last_name", "Sensei")
+						.or()
+						.like("email", "a")
+				);
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
