@@ -23,6 +23,14 @@ public class TestMP {
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
 	
 	/**
+	 * 条件构造器 查询操作
+	 */
+	@Test
+	public void testEntityWrapperSelect() {
+		
+	}
+	
+	/**
 	 * 通用删除操作
 	 */
 	@Test
