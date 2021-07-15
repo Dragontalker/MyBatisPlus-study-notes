@@ -39,17 +39,18 @@ public class TestMP {
 		//Employee result = employeeMapper.selectOne(employee);
 		
 		// 3. 通过多个id进行查询 <foreach>
-		List<Integer> idList = new ArrayList<>(); 
-		idList.add(4);
-		idList.add(5);
-		idList.add(6);
-		idList.add(7);
+		//List<Integer> idList = new ArrayList<>(); 
+		//idList.add(4);
+		//idList.add(5);
+		//idList.add(6);
+		//idList.add(7);
+		//List<Employee> emps = employeeMapper.selectBatchIds(idList);
+		//for (Employee emp : emps) {
+			//System.out.println(">> result: " + emp);
+		//}
 		
-		List<Employee> emps = employeeMapper.selectBatchIds(idList);
+		// 4. 通过Map封装条件查询
 		
-		for (Employee emp : emps) {
-			System.out.println(">> result: " + emp);
-		}
 	}
 	
 	/**
