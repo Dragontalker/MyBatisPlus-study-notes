@@ -8,10 +8,15 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.dragontalker.mapper.EmployeeMapper;
+
 public class TestMP {
 	
 	private ApplicationContext ioc = 
 			new ClassPathXmlApplicationContext("applicationContext.xml");
+	
+	private EmployeeMapper employeeMapper = 
+			ioc.getBean("employeeMapper", EmployeeMapper.class);
 
 	@Test
 	public void testDataSource() throws Exception{
