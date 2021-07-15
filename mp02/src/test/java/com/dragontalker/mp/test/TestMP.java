@@ -1,6 +1,7 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -25,10 +26,17 @@ public class TestMP {
 		
 		//Employee result = employee.selectById(14);
 		
-		employee.setId(14);
-		Employee result = employee.selectById();
+		//employee.setId(14);
+		//Employee result = employee.selectById();
 		
-		System.out.println(">> result: " + result);
+		//System.out.println(">> result: " + result);
+		
+		List<Employee> emps = employee.selectAll();
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
+		
 
 	}
 	
