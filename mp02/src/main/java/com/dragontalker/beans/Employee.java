@@ -1,5 +1,7 @@
 package com.dragontalker.beans;
 
+import java.io.Serializable;
+
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableField;
 
@@ -16,6 +18,8 @@ import com.baomidou.mybatisplus.annotations.TableField;
  * MyBatisPlus会默认使用实体类的类名到数据中找对应的表
  */
 public class Employee extends Model<Employee>{
+
+	private static final long serialVersionUID = -3452447172643644354L;
 
 	private Integer id;
 	
@@ -83,6 +87,12 @@ public class Employee extends Model<Employee>{
 	public String toString() {
 		return "Employee [id=" + id + ", lastName=" + lastName + ", email=" + email + ", gender=" + gender + ", age="
 				+ age + ", salary=" + salary + "]";
+	}
+
+	@Override
+	protected Serializable pkVal() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
