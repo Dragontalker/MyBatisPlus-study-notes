@@ -14,6 +14,7 @@ public class TestMP {
 		
 		//1. 全局配置
 		GlobalConfig config = new GlobalConfig();
+		config.setActiveRecord(true); // 是否支持AR模式
 		
 		//2. 数据源配置
 		
