@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.dragontalker.beans.Employee;
 import com.dragontalker.mapper.EmployeeMapper;
@@ -28,6 +29,15 @@ public class TestMP {
 	@Test
 	public void testEntityWrapperSelect() {
 		
+		// 需要我们分页查询tbl_employee表中, 年龄18~50之间性别为男且姓名为Tom的所有用户
+		
+		employeeMapper.selectPage(
+				new Page<Employee>(1, 2), 
+				new EntityWrapper<Employee>()
+					.between("age", 18, 50)
+					.eq("gender", 1)
+					.eq("last_name", "Tom")
+		);
 	}
 	
 	/**
