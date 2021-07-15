@@ -17,6 +17,14 @@ public class TestMP {
 	
 	private EmployeeMapper employeeMapper = 
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
+	
+	/**
+	 * 通用插入操作
+	 */
+	@Test
+	public void testCommonInsert() {
+		
+	}
 
 	@Test
 	public void testDataSource() throws Exception{
