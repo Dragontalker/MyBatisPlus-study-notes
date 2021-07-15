@@ -34,6 +34,16 @@ public class Employee {
 	
 	private Integer age;
 	
+	private Double salary;
+	
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+
 	public Integer getId() {
 		return id;
 	}
@@ -77,7 +87,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", lastName=" + lastName + ", email=" + email + ", gender=" + gender + ", age="
-				+ age + "]";
+				+ age + ", salary=" + salary + "]";
 	}
 	
 }
