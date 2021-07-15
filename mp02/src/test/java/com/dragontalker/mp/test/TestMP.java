@@ -23,7 +23,11 @@ public class TestMP {
 		
 		Employee employee = new Employee();
 		
-		Employee result = employee.selectById(14);
+		//Employee result = employee.selectById(14);
+		
+		employee.setId(14);
+		Employee result = employee.selectById();
+		
 		System.out.println(">> result: " + result);
 
 	}
