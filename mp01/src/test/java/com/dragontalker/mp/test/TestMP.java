@@ -1,7 +1,9 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.sql.DataSource;
 
@@ -32,7 +34,12 @@ public class TestMP {
 		//System.out.println(">> result: " + result);
 		
 		// 2. 通过条件进行删除
+		Map<String, Object> columnMap = new HashMap<>();
+		columnMap.put("last_name", "MP");
+		columnMap.put("email", "mp@atguigu.com");
 		
+		Integer result = employeeMapper.deleteByMap(columnMap);
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
