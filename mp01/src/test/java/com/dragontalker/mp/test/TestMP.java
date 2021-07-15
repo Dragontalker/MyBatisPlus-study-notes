@@ -35,6 +35,10 @@ public class TestMP {
 		// 插入到数据库
 		Integer result = employeeMapper.insert(employee);
 		System.out.println(">> reuslt " + result);
+		
+		// 获取当前数据在数据库中的主键值
+		Integer key = employee.getId();
+		System.out.println(">> key: " + key);
 	}
 
 	@Test
