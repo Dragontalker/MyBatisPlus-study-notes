@@ -20,6 +20,14 @@ public class TestMP {
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
 	
 	/**
+	 * 通用更新操作
+	 */
+	@Test
+	public void testCommonUpdate() {
+		
+	}
+	
+	/**
 	 * 通用插入操作
 	 */
 	@Test
