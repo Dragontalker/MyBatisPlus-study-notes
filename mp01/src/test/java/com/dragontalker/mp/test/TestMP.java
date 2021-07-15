@@ -29,12 +29,15 @@ public class TestMP {
 		Employee employee = new Employee();
 		employee.setLastName("MP");
 		employee.setEmail("mp@atguigu.com");
-		employee.setGender(1);
-		employee.setAge(22);
+		//employee.setGender(1);
+		//employee.setAge(22);
 		employee.setSalary(20000.0);
 		
 		// 插入到数据库
-		Integer result = employeeMapper.insert(employee);
+		//Integer result = employeeMapper.insert(employee);
+		
+		Integer result = employeeMapper.insertAllColumn(employee);
+		
 		System.out.println(">> reuslt " + result);
 		
 		// 获取当前数据在数据库中的主键值
