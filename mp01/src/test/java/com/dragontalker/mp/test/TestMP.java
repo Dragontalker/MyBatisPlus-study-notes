@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.dragontalker.beans.Employee;
 import com.dragontalker.mapper.EmployeeMapper;
 
 public class TestMP {
@@ -24,6 +25,10 @@ public class TestMP {
 	@Test
 	public void testCommonInsert() {
 		
+		// 初始化Employee对象
+		Employee employee = new Employee();
+		
+		employeeMapper.insert(null)
 	}
 
 	@Test
