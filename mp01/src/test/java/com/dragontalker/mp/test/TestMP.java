@@ -30,12 +30,15 @@ public class TestMP {
 		//System.out.println(employee);
 		
 		// 2. 通过多个列进行查询 id + lastName
-		Employee employee = new Employee();
-		employee.setId(7);
-		employee.setLastName("XiaoZeSensei");
-		employee.setGender(0);
+		//Employee employee = new Employee();
+		//employee.setId(7);
+		//employee.setLastName("XiaoZeSensei");
+		//employee.setGender(0);
+		//Employee result = employeeMapper.selectOne(employee);
 		
-		Employee result = employeeMapper.selectOne(employee);
+		// 3. 通过多个id进行查询
+		
+		
 		System.out.println(">> result: " + result);
 	}
 	
