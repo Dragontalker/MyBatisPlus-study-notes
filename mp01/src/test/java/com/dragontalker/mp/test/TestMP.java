@@ -31,13 +31,17 @@ public class TestMP {
 		
 		// 需要我们分页查询tbl_employee表中, 年龄18~50之间性别为男且姓名为Tom的所有用户
 		
-		employeeMapper.selectPage(
+		List<Employee> emps = employeeMapper.selectPage(
 				new Page<Employee>(1, 2), 
 				new EntityWrapper<Employee>()
 					.between("age", 18, 50)
 					.eq("gender", 1)
 					.eq("last_name", "Tom")
-		);
+			);
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
 	}
 	
 	/**
