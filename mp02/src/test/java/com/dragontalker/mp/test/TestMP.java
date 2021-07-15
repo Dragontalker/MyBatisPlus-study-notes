@@ -1,7 +1,6 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
-import java.util.List;
 
 import javax.sql.DataSource;
 
