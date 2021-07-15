@@ -16,6 +16,14 @@ public class TestMP {
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 	
 	/**
+	 * AR 查询操作
+	 */
+	@Test
+	public void testARSelect() {
+		
+	}
+	
+	/**
 	 * AR 修改操作
 	 */
 	@Test
