@@ -22,6 +22,9 @@ public class TestMP {
 	@Test
 	public void testARDelete() {
 		
+		Employee employee = new Employee();
+		boolean result = employee.deleteById(2);
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
