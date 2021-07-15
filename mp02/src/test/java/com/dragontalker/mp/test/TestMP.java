@@ -23,6 +23,12 @@ public class TestMP {
 	@Test
 	public void testARUpdate() {
 		
+		Employee employee = new Employee();
+		employee.setId(14);
+		employee.setLastName("SongLaoShi");
+		employee.setEmail("sls@atguigu.com");
+		employee.setGender(1);
+		employee.setAge(36);
 	}
 	
 	/**
