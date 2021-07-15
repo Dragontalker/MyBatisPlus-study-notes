@@ -27,6 +27,11 @@ public class TestMP {
 	@Test
 	public void testCommonDelete() {
 		
+		// 1. 通过id进行删除
+		//Integer result = employeeMapper.deleteById(13);
+		//System.out.println(">> result: " + result);
+		
+		// 2. 通过条件进行删除
 		
 	}
 	
