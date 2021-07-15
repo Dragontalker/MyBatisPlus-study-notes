@@ -34,7 +34,11 @@ public class TestMP {
 		employee.setEmail("cls@sina.com");
 		employee.setGender(0);
 		
-		employeeMapper.update(null, null)
+		employeeMapper.update(employee, 
+					new EntityWrapper<Employee>()
+						.eq("last_name", "Tom")
+						.eq("age", 44)
+				);
 	}
 	
 	/**
