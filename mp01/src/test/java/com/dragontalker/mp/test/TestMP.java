@@ -25,6 +25,8 @@ public class TestMP {
 	@Test
 	public void testCommonSelect() {
 		
+		Employee employee = employeeMapper.selectById(7);
+		System.out.println(employee);
 	}
 	
 	/**
