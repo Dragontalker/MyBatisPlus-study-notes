@@ -31,6 +31,7 @@ public class TestMP {
 		employee.setEmail("mp@atguigu.com");
 		employee.setGender(1);
 		employee.setAge(22);
+		employee.setSalary(20000.0);
 		
 		// 插入到数据库
 		Integer result = employeeMapper.insert(employee);

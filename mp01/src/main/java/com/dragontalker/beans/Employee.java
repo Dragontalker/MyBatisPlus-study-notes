@@ -34,6 +34,7 @@ public class Employee {
 	
 	private Integer age;
 	
+	@TableField(exist = false)
 	private Double salary;
 	
 	public Double getSalary() {
