@@ -53,7 +53,7 @@ public class TestMP {
 		
 		// 4. 通过Map封装条件查询
 		Map<String, Object> columnMap = new HashMap<>();
-		columnMap.put("last_name", "Tom");
+		columnMap.put("last_name", "MP");
 		columnMap.put("gender", 1);
 		
 		List<Employee> emps = employeeMapper.selectByMap(columnMap);
