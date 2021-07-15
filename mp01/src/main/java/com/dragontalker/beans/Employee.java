@@ -1,5 +1,8 @@
 package com.dragontalker.beans;
 
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
+
 /**
  * JavaBean
  * 
@@ -10,10 +13,15 @@ package com.dragontalker.beans;
  */
 public class Employee {
 
+	@TableId(value = "id", type=IdType.AUTO)
 	private Integer id;
+	
 	private String lastName;
+	
 	private String email;
+	
 	private Integer gender;
+	
 	private Integer age;
 	
 	public Integer getId() {
