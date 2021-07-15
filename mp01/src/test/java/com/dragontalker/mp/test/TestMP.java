@@ -27,8 +27,12 @@ public class TestMP {
 		
 		// 初始化Employee对象
 		Employee employee = new Employee();
+		employee.setLastName("MP");
+		employee.setEmail("mp@atguigu.com");
+		employee.setGender(1);
+		employee.setAge(22);
 		
-		employeeMapper.insert(null)
+		employeeMapper.insert(employee);
 	}
 
 	@Test
