@@ -17,20 +17,12 @@ public class TestMP {
 	private ApplicationContext ioc = 
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 	
-	private EmployeeMapper employeeMapper = 
-			ioc.getBean("employeeMapper", EmployeeMapper.class);
-	
 	/**
-	 * 条件构造器 删除操作
+	 * AR 插入操作
 	 */
 	@Test
-	public void testEnittyWrapperDelete() {
+	public void testARInsert() {
 		
-		employeeMapper.delete(
-					new EntityWrapper<Employee>()
-						.eq("last_name", "Tom")
-						.eq("age", 22)
-				);
 		
 	}
 	
