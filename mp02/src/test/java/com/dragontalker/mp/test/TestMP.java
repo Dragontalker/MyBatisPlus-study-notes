@@ -18,12 +18,23 @@ public class TestMP {
 	
 	/**
 	 * AR 删除操作
+	 * 
+	 * 注意: 删除不存在的数据在逻辑上也属于成功
 	 */
 	@Test
 	public void testARDelete() {
 		
 		Employee employee = new Employee();
-		boolean result = employee.deleteById(2);
+		//boolean result = employee.deleteById(2);
+		//employee.setId(2);
+		//boolean result = employee.deleteById();
+		//System.out.println(">> result: " + result);
+		
+		boolean result = employee.delete(
+					new EntityWrapper<Employee>()
+						.like("last_name", "Xiao")
+				);
+		
 		System.out.println(">> result: " + result);
 	}
 	
