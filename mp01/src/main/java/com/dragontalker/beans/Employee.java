@@ -1,6 +1,7 @@
 package com.dragontalker.beans;
 
 import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.enums.IdType;
 
 /**
@@ -15,6 +16,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 /**
  * MyBatisPlus会默认使用实体类的类名到数据中找对应的表
  */
+@TableName(value = "tbl_employee")
 public class Employee {
 
 	/**
