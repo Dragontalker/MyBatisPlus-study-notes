@@ -20,6 +20,14 @@ public class TestMP {
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
 	
 	/**
+	 * 通用查询操作
+	 */
+	@Test
+	public void testCommonSelect() {
+		
+	}
+	
+	/**
 	 * 通用更新操作
 	 */
 	@Test
@@ -27,13 +35,16 @@ public class TestMP {
 		
 		// 初始化修改对象
 		Employee employee = new Employee();
-		employee.setId(5);
-		employee.setLastName("MyBatisPlus");
-		employee.setEmail("mybatisPlus@sina.com");
+		employee.setId(7);
+		employee.setLastName("XiaoZeSensei");
+		employee.setEmail("xz@sina.com");
 		employee.setGender(0);
-		employee.setAge(33);
+		//employee.setAge(33);
 		
-		employeeMapper.updateById(employee);
+		//Integer result = employeeMapper.updateById(employee);
+		Integer result = employeeMapper.updateAllColumnById(employee);
+		
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
