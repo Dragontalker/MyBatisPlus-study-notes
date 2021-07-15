@@ -38,6 +38,9 @@
 		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 		<!-- 别名处理 -->
 		<property name="typeAliasesPackage" value="com.dragontalker.mp.beans"></property>
+		
+		<!-- 注入全局MP策略配置 -->
+		<property name="globalConfig" ref="globalConfiguration"></property>
 	</bean>
 	
 	<!-- 定义MyBatisPlus的全局策略配置 -->

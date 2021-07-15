@@ -1,8 +1,6 @@
 package com.dragontalker.beans;
 
-import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
-import com.baomidou.mybatisplus.enums.IdType;
 
 /**
  * JavaBean
@@ -24,7 +22,7 @@ public class Employee {
 	 * 	- value: 指定表中的主键列的列名, 如果实体属性名与列名一致, 可以省略不指定
 	 *  - type: 指定主键策略
 	 */
-	@TableId(value = "id", type=IdType.AUTO)
+	//@TableId(value = "id", type=IdType.AUTO)
 	private Integer id;
 	
 	private String lastName;
