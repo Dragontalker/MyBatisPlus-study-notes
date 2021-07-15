@@ -38,9 +38,7 @@ public class TestMP {
 		//employee.setGender(0);
 		//Employee result = employeeMapper.selectOne(employee);
 		
-		// 3. 通过多个id进行查询
-		
-		
+		// 3. 通过多个id进行查询 <foreach>
 		List<Integer> idList = new ArrayList<>(); 
 		idList.add(4);
 		idList.add(5);
