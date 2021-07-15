@@ -2,6 +2,8 @@ package com.dragontalker.mp.test;
 
 import org.junit.Test;
 
+import com.baomidou.mybatisplus.generator.config.GlobalConfig;
+
 public class TestMP {
 	
 	/**
@@ -11,6 +13,7 @@ public class TestMP {
 	public void testGenerator() {
 		
 		//1. 全局配置
+		GlobalConfig config = new GlobalConfig();
 		
 		//2. 数据源配置
 		
