@@ -1,5 +1,7 @@
 package com.dragontalker.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+
 /**
  * Mapper接口
  * 
@@ -7,6 +9,6 @@ package com.dragontalker.mapper;
  * 
  * 基于MyBatisPlus: 让XxxMapper接口继承BaseMapper接口即可
  */
-public interface EmployeeMapper {
+public interface EmployeeMapper extends BaseMapper<T>{
 
 }
