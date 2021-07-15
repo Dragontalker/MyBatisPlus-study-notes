@@ -24,6 +24,14 @@ public class TestMP {
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
 	
 	/**
+	 * 条件构造器 删除操作
+	 */
+	@Test
+	public void testEnittyWrapperDelete() {
+		
+	}
+	
+	/**
 	 * 条件构造器 修改操作
 	 */
 	@Test
