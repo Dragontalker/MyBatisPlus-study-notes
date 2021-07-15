@@ -11,6 +11,10 @@ import com.baomidou.mybatisplus.enums.IdType;
  *     int ==> 0
  *     boolean ==> false
  */
+
+/**
+ * MyBatisPlus会默认使用实体类的类名到数据中找对应的表
+ */
 public class Employee {
 
 	/**
