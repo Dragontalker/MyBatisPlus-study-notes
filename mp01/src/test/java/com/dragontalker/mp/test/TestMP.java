@@ -2,7 +2,9 @@ package com.dragontalker.mp.test;
 
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.sql.DataSource;
 
@@ -50,6 +52,15 @@ public class TestMP {
 		//}
 		
 		// 4. 通过Map封装条件查询
+		Map<String, Object> columnMap = new HashMap<>();
+		columnMap.put("last_name", "Tom");
+		columnMap.put("gender", 1);
+		
+		List<Employee> emps = employeeMapper.selectByMap(columnMap);
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
 		
 	}
 	
