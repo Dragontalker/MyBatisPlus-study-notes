@@ -21,6 +21,11 @@ public class TestMP {
 	@Test
 	public void testARSelect() {
 		
+		Employee employee = new Employee();
+		
+		Employee result = employee.selectById(14);
+		System.out.println(">> result: " + result);
+
 	}
 	
 	/**
