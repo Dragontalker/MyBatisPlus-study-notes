@@ -22,6 +22,15 @@ public class TestMP {
 			ioc.getBean("employeeMapper", EmployeeMapper.class);
 	
 	/**
+	 * 通用删除操作
+	 */
+	@Test
+	public void testCommonDelete() {
+		
+		
+	}
+	
+	/**
 	 * 通用查询操作
 	 */
 	@Test
@@ -62,7 +71,7 @@ public class TestMP {
 		
 		// 5. 分页查询
 		
-		List<Employee> emps = employeeMapper.selectPage(new Page<>(2, 2), null);
+		List<Employee> emps = employeeMapper.selectPage(new Page<>(3, 2), null);
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
