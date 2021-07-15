@@ -25,6 +25,15 @@ public class TestMP {
 	@Test
 	public void testCommonUpdate() {
 		
+		// 初始化修改对象
+		Employee employee = new Employee();
+		employee.setId(5);
+		employee.setLastName("MyBatisPlus");
+		employee.setEmail("mybatisPlus@sina.com");
+		employee.setGender(0);
+		employee.setAge(33);
+		
+		employeeMapper.updateById(employee);
 	}
 	
 	/**
