@@ -1,6 +1,6 @@
 package com.dragontalker.mp.test;
 
-import static org.junit.Assert.*;
+import java.sql.Connection;
 
 import javax.sql.DataSource;
 
@@ -14,10 +14,14 @@ public class TestMP {
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 
 	@Test
-	public void testDataSource() {
+	public void testDataSource() throws Exception{
 		
 		DataSource ds = ioc.getBean("dataSource", DataSource.class);
 		System.out.println(ds);
+		
+		Connection conn = ds.getConnection();
+		System.out.println(conn);
+		
 	}
 
 }
