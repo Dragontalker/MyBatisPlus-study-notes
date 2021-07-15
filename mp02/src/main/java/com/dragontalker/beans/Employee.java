@@ -89,10 +89,12 @@ public class Employee extends Model<Employee>{
 				+ age + ", salary=" + salary + "]";
 	}
 
+	/**
+	 * 指定当前类的主键属性
+	 */
 	@Override
 	protected Serializable pkVal() {
-		// TODO Auto-generated method stub
-		return null;
+		return id;
 	}
 	
 }
