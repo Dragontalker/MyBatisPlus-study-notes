@@ -29,6 +29,12 @@ public class TestMP {
 	@Test
 	public void testEntityWrapperUpdate() {
 		
+		Employee employee = new Employee();
+		employee.setLastName("CangSensei");
+		employee.setEmail("cls@sina.com");
+		employee.setGender(0);
+		
+		employeeMapper.update(null, null)
 	}
 	
 	/**
