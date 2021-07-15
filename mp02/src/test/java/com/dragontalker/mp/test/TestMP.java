@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.dragontalker.beans.Employee;
 
 public class TestMP {
@@ -31,7 +32,12 @@ public class TestMP {
 		
 		//System.out.println(">> result: " + result);
 		
-		List<Employee> emps = employee.selectAll();
+		//List<Employee> emps = employee.selectAll();
+		
+		List<Employee> emps = employee.selectList(
+					new EntityWrapper<Employee>()
+						.like("last_name", "LaoShi")
+				);
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
