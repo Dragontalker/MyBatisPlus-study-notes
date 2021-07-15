@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.baomidou.mybatisplus.plugins.Page;
 import com.dragontalker.beans.Employee;
 import com.dragontalker.mapper.EmployeeMapper;
 
@@ -62,6 +63,13 @@ public class TestMP {
 			//System.out.println(">> result: " + emp);
 		//}
 		
+		// 5. 分页查询
+		
+		List<Employee> emps = employeeMapper.selectPage(new Page<>(2, 2), null);
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
 	}
 	
 	/**
