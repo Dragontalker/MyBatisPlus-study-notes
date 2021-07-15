@@ -52,15 +52,15 @@ public class TestMP {
 		//}
 		
 		// 4. 通过Map封装条件查询
-		Map<String, Object> columnMap = new HashMap<>();
-		columnMap.put("last_name", "MP");
-		columnMap.put("gender", 1);
+		//Map<String, Object> columnMap = new HashMap<>();
+		//columnMap.put("last_name", "MP");
+		//columnMap.put("gender", 1);
 		
-		List<Employee> emps = employeeMapper.selectByMap(columnMap);
+		//List<Employee> emps = employeeMapper.selectByMap(columnMap);
 		
-		for (Employee emp : emps) {
-			System.out.println(">> result: " + emp);
-		}
+		//for (Employee emp : emps) {
+			//System.out.println(">> result: " + emp);
+		//}
 		
 	}
 	
