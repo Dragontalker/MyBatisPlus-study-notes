@@ -31,6 +31,12 @@ public class TestMP {
 					new EntityWrapper<Employee>()
 						.like("last_name", "Sen")
 				);
+		
+		List<Employee> emps = page.getRecords();
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
 	}
 	
 	/**
