@@ -13,6 +13,11 @@ import com.baomidou.mybatisplus.enums.IdType;
  */
 public class Employee {
 
+	/**
+	 * @TableId:
+	 * 	- value: 指定表中的主键列的列名, 如果实体属性名与列名一致, 可以省略不指定
+	 *  - type: 指定主键策略
+	 */
 	@TableId(value = "id", type=IdType.AUTO)
 	private Integer id;
 	
