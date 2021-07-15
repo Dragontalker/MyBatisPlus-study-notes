@@ -1,5 +1,7 @@
 package com.dragontalker.beans;
 
+import com.baomidou.mybatisplus.annotations.TableField;
+
 /**
  * JavaBean
  * 
@@ -23,6 +25,7 @@ public class Employee {
 	//@TableId(value = "id", type=IdType.AUTO)
 	private Integer id;
 	
+	@TableField(value = "last_name")
 	private String lastName;
 	
 	private String email;
