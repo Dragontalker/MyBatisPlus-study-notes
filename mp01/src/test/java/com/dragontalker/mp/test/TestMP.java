@@ -87,8 +87,9 @@ public class TestMP {
 		List<Employee> emps = employeeMapper.selectList(
 					new EntityWrapper<Employee>()
 						.eq("gender", 0)
-						//.orderBy("age")
-						.orderDesc(Arrays.asList(new String[] {"age"}) )
+						.orderBy("age")
+						//.orderDesc(Arrays.asList(new String[] {"age"}) )
+						.last("desc")
 				);
 		
 		for (Employee emp : emps) {
