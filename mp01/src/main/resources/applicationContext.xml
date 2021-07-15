@@ -50,6 +50,9 @@
 		
 		<!-- 全局的主键策略 -->
 		<property name="idType" value="0"></property>
+		
+		<!-- 全局的表前缀策略配置 -->
+		<property name="tablePrefix" value="tbl_"></property>
 	</bean>
 	
 	<!-- 配置MyBatis扫描mapper接口的路径 -->

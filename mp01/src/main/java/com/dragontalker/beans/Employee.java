@@ -1,7 +1,5 @@
 package com.dragontalker.beans;
 
-import com.baomidou.mybatisplus.annotations.TableName;
-
 /**
  * JavaBean
  * 
@@ -14,7 +12,7 @@ import com.baomidou.mybatisplus.annotations.TableName;
 /**
  * MyBatisPlus会默认使用实体类的类名到数据中找对应的表
  */
-@TableName(value = "tbl_employee")
+//@TableName(value = "tbl_employee")
 public class Employee {
 
 	/**
