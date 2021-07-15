@@ -40,6 +40,9 @@
 		<property name="typeAliasesPackage" value="com.dragontalker.mp.beans"></property>
 	</bean>
 	
+	<!-- 定义MyBatisPlus的全局策略配置 -->
+	<bean id="" class="com.baomidou.mybatisplus.entity.GlobalConfiguration"></bean>
+	
 	<!-- 配置MyBatis扫描mapper接口的路径 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.dragontalker.mapper"></property>
