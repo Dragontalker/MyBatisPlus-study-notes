@@ -33,6 +33,7 @@ public class TestMP {
 		Employee employee = new Employee();
 		employee.setId(7);
 		employee.setLastName("XiaoZeSensei");
+		employee.setGender(0);
 		
 		Employee result = employeeMapper.selectOne(employee);
 		System.out.println(">> result: " + result);
