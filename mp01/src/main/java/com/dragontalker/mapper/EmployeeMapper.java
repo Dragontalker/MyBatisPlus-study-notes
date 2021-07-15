@@ -12,5 +12,6 @@ import com.dragontalker.beans.Employee;
  *                  BaseMapper<T>: 泛型指定的就是当前Mapper接口所操作的实体类类型
  */
 public interface EmployeeMapper extends BaseMapper<Employee>{
-
+	// Integer insertEmployee(Employee employee);
+	// <insert userGeneratedKeys="true" keyProperty="id">SQL...</insert>
 }
