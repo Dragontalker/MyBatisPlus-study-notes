@@ -1,6 +1,8 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -39,7 +41,17 @@ public class TestMP {
 		// 3. 通过多个id进行查询
 		
 		
-		System.out.println(">> result: " + result);
+		List<Integer> idList = new ArrayList<>(); 
+		idList.add(4);
+		idList.add(5);
+		idList.add(6);
+		idList.add(7);
+		
+		List<Employee> emps = employeeMapper.selectBatchIds(idList);
+		
+		for (Employee emp : emps) {
+			System.out.println(">> result: " + emp);
+		}
 	}
 	
 	/**
