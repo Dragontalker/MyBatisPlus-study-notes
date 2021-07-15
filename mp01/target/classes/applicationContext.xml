@@ -42,7 +42,7 @@
 	
 	<!-- 配置MyBatis扫描mapper接口的路径 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.dragontalker.mp.mapper"></property>
+		<property name="basePackage" value="com.dragontalker.mapper"></property>
 	</bean>
 
 </beans>
