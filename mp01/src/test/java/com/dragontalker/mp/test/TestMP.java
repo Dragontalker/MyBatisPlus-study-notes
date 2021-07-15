@@ -1,6 +1,7 @@
 package com.dragontalker.mp.test;
 
 import java.sql.Connection;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -38,6 +39,15 @@ public class TestMP {
 		
 		//Integer result = employeeMapper.deleteByMap(columnMap);
 		//System.out.println(">> result: " + result);
+		
+		// 3. 批量删除
+		List<Integer> idList = new ArrayList<>();
+		idList.add(3);
+		idList.add(4);
+		idList.add(5);
+		
+		Integer result = employeeMapper.deleteBatchIds(idList);
+		System.out.println(">> result: " + result);
 	}
 	
 	/**
