@@ -1,5 +1,6 @@
 package com.dragontalker.beans;
 
+import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableField;
 
 /**
@@ -14,7 +15,7 @@ import com.baomidou.mybatisplus.annotations.TableField;
 /**
  * MyBatisPlus会默认使用实体类的类名到数据中找对应的表
  */
-public class Employee {
+public class Employee extends Model<Employee>{
 
 	private Integer id;
 	
