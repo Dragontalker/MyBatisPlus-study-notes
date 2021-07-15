@@ -23,6 +23,11 @@ public class TestMP {
 	@Test
 	public void testARInsert() {
 		
+		Employee employee = new Employee();
+		employee.setLastName("SongSensei");
+		employee.setEmail("sls@atguigu.com");
+		employee.setGender(1);
+		employee.setAge(35);
 		
 	}
 	
