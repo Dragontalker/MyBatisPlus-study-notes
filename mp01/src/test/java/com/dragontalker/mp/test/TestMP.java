@@ -72,14 +72,16 @@ public class TestMP {
 		
 		// 查询tbl_employee表中, 性别为女并且名字中带有"Sensei" 或者 邮箱中带有"a"
 		
-		List<Employee> emps = employeeMapper.selectList(
-					new EntityWrapper<Employee>()
-						.eq("gender", 0)
-						.like("last_name", "Sensei")
+		//List<Employee> emps = employeeMapper.selectList(
+					//new EntityWrapper<Employee>()
+						//.eq("gender", 0)
+						//.like("last_name", "Sensei")
 						//.or() // SQL: (gender = ? AND last_name LIKE ? OR email LIKE ?)
-						.orNew() // SQL: (gender = ? AND last_name LIKE ?) OR (email LIKE ?)
-						.like("email", "a")
-				);
+						//.orNew() // SQL: (gender = ? AND last_name LIKE ?) OR (email LIKE ?)
+						//.like("email", "a")
+				//);
+		
+		//查询性别为女的, 根据age进行排序(asex/desc), 简单分页
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
