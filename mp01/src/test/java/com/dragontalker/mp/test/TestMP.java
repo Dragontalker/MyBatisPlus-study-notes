@@ -34,8 +34,10 @@ public class TestMP {
 		employee.setSalary(20000.0);
 		
 		// 插入到数据库
+		// insert方法在插入时, 会根据实体类的每个属性进行非空判断, 只有非空属性对应的字段的才会出现到SQL语句中
 		//Integer result = employeeMapper.insert(employee);
 		
+		// insertAllColumns方法在插入时, 不管属性是否非空, 属性对应的字段都会出现到SQL语句中
 		Integer result = employeeMapper.insertAllColumn(employee);
 		
 		System.out.println(">> reuslt " + result);
