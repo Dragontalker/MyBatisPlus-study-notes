@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.baomidou.mybatisplus.mapper.Condition;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.dragontalker.beans.Employee;
@@ -84,15 +85,21 @@ public class TestMP {
 		
 		//查询性别为女的, 根据age进行排序(asex/desc), 简单分页
 		
-		//List<Employee> emps = employeeMapper.selectList(
-					//new EntityWrapper<Employee>()
-						//.eq("gender", 0)
-						//.orderBy("age")
+		List<Employee> emps = employeeMapper.selectList(
+					new EntityWrapper<Employee>()
+						.eq("gender", 0)
+						.orderBy("age")
 						//.orderDesc(Arrays.asList(new String[] {"age"}) )
-						//.last("desc limit 1, 3")
+						.last("desc limit 1, 3")
+				);
+		
+		//List<Employee> emps = employeeMapper.selectPage(
+					//new Page<Employee>(1, 2),
+					//Condition.create()
+						//.between("age", 18, 50)
+						//.eq("gender", "1")
+						//.eq("last_name", "Tom")
 				//);
-		
-		
 		
 		for (Employee emp : emps) {
 			System.out.println(">> result: " + emp);
