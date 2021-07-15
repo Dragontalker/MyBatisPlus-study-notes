@@ -17,6 +17,14 @@ public class TestMP {
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 	
 	/**
+	 * AR 分页复杂操作
+	 */
+	@Test
+	public void testARPage() {
+		
+	}
+	
+	/**
 	 * AR 删除操作
 	 * 
 	 * 注意: 删除不存在的数据在逻辑上也属于成功
