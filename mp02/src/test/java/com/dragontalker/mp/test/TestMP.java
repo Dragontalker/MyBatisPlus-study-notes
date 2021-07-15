@@ -17,6 +17,14 @@ public class TestMP {
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 	
 	/**
+	 * AR 删除操作
+	 */
+	@Test
+	public void testARDelete() {
+		
+	}
+	
+	/**
 	 * AR 查询操作
 	 */
 	@Test
