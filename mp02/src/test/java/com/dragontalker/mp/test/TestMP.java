@@ -18,6 +18,14 @@ public class TestMP {
 			new ClassPathXmlApplicationContext("applicationContext.xml");
 	
 	/**
+	 * AR 修改操作
+	 */
+	@Test
+	public void testARUpdate() {
+		
+	}
+	
+	/**
 	 * AR 插入操作
 	 */
 	@Test
