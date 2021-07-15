@@ -29,6 +29,12 @@ public class TestMP {
 	@Test
 	public void testEnittyWrapperDelete() {
 		
+		employeeMapper.delete(
+					new EntityWrapper<Employee>()
+						.eq("last_name", "Tom")
+						.eq("age", 22)
+				);
+		
 	}
 	
 	/**
