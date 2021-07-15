@@ -34,16 +34,22 @@ public class TestMP {
 		
 		//List<Employee> emps = employee.selectAll();
 		
-		List<Employee> emps = employee.selectList(
+		//List<Employee> emps = employee.selectList(
+					//new EntityWrapper<Employee>()
+						//.like("last_name", "Sensei")
+				//);
+		
+		//for (Employee emp : emps) {
+			//System.out.println(">> result: " + emp);
+		//}
+		
+		Integer result = employee.selectCount(
 					new EntityWrapper<Employee>()
-						.like("last_name", "LaoShi")
+						.eq("gender", 0)
 				);
 		
-		for (Employee emp : emps) {
-			System.out.println(">> result: " + emp);
-		}
+		System.out.println(">> reuslt: " + result);
 		
-
 	}
 	
 	/**
